@@ -1,0 +1,818 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap');
+// COLORS
+$mainblue: #080E2F;
+$transparentmainblue: rgba(8, 14, 47, 1);
+$skillswhite: #FFFFFF;
+$aboutgreen: #0E4946;
+$skillsteal: #146166;
+$iconblock: #023430;
+$languagewhite: #d9e2e2;
+$techcirclegreen: #05607D;
+$hoverfonts: #B7BCD6;
+$experiencegreen: #255C5A;
+$positioncolor: #8081AA;
+
+// BUTTON COLORS
+$learnmorebutton: #EBEBEB;
+$experiencegreenbutton: #476D6B;
+$resumebutton: #507E81;
+$jobdescription: #00C6C3;
+
+
+// DISPLAY SQAURES COLORS
+$portfolios: #36395D;
+$experiences: #496b69;
+$experiencestwo: #476D6B;
+$abouts: #627C7A;
+$skillses: #7FC4C9;
+$skillsdarker: #669EA3;
+$skillsdarker2: #507e81;
+
+// BOX SHADOW
+$boxshadowcircles: rgba(0, 0, 0, 0.521);
+
+// CIRCLE OUTLINE
+$circleoutlines: rgb(221,221,221,0.52);
+
+// FOOTER
+$firstblue: #58a6ff;
+$secondblue: #6287cf;
+$thirdblue: rgb(85, 85, 255);
+$smallsgrey: #757782;
+
+// SOCIALS
+$socialsgrey: #B7BCD6;
+
+$lighterskills: #080e31;
+
+// Colors
+$darkblue: #080E2F;
+$skillsteal: #146166;
+$darkred: darkred;
+$darkgreen: darkgreen;
+$darkgrey: darkgrey;
+
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    body {
+        .container {
+            background-color: $mainblue;
+            margin: 0;
+            // Top NavBar that is static
+            .the_top_nav{
+                background-color: $darkblue;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                z-index: 98;
+                height: 14vh;
+                transition: 1s all ease-in-out;
+                .nav_top_contents {
+                    display: flex;
+                    justify-content: space-between;
+                    #courdevs_top_logo {
+                        width: 25vw;
+                        height: 25vw;
+                        margin: 2vh 0 0 5vw;
+                        transition: 1s all ease-in-out;
+                        // opacity: 0;
+                    }
+                    #courdevs_top_logo.dissapear {
+                        opacity: 0;
+                        transition: 1s all ease-in-out;
+                    }
+                    // #courdevs_top_logo.appear {
+                    //     opacity: 1;
+                    //     transition: .7s all ease-in;
+                    // }
+                    .you {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: left;
+                        align-items: center;
+                        // margin: 4.5vh 0 0 -60vw;
+                        margin: 5.5vh 0 0 -4vw;
+                        opacity: 0;
+                        transition: 1s all ease-in-out;
+                        #name {
+                            color: white;
+                            font-size: 4vw;
+                            font-family: 'Inter', sans-serif;
+                            margin: 0 0 0 0vw;
+                        }
+                        #job_description {
+                            color: $positioncolor;
+                            font-size: 3vw;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+                    .you.appear {
+                        opacity: 1;
+                        transition: 1s all ease-in-out;
+                    }
+                    #top_hamburger {
+                        width: 12vw;
+                        height: 12vw;
+                        margin: 4.5vh 8vw 0 0;
+                        transition: 1s all ease-in-out;
+                    }
+                    #top_hamburger.dissapear {
+                        opacity: 0;
+                        transition: 1s all ease-in-out;
+                    }
+                    // #top_hamburger.appear {
+                    //     opacity: 1;
+                    //     transition: 1s all ease-in;
+                    // }
+                }
+            }
+            // Make it dissapear
+            .the_top_nav.dissapear {
+                opacity: 0;
+                transition: 1s all ease-out;
+            }
+            .the_top_nav.appear {
+                opacity: 1;
+                transition: .7s all ease-in;
+            }
+            // the Floating Nav at top of page dissapear
+            .the_nav.dissapear {
+                opacity: 0;
+                transition: .5s all ease-in-out;
+            }
+            .the_nav.scroll_up {
+                opacity: 1;
+            }
+            // Try add another class for top that
+                // sets opacity to zero and moves the
+                    // nav bar to the side or up or fades
+                        // which ever looks best
+            .the_nav.top {
+                // make navbar dissolve slow
+                opacity: 0;
+                transition: 1s all ease-out;
+            }
+            .section_one {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $darkblue;
+                height: 90vh;
+                // .home_page_logo {
+                //     margin: -70vh 0 0 -40vw;
+                //     #courdevs_top_logo {
+                //         width: 50vw;
+                //         height: 50vw;
+                //     }
+                // }
+                .section_one_headshot {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: -25vh 0 0 0;
+                    #home_headshot {
+                        width: 55vw;
+                        height: 55vw;
+                        border-radius: 50%; 
+                        position: absolute;  
+                    }
+                    .back_circle {
+                        width: 60vw;
+                        height: 60vw;
+                        border: 7px solid $positioncolor;
+                        border-radius: 50%;
+                    }
+                }
+                .section_one_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5vh 0 0 0;
+                    // height: 100vh;
+                    h1 {
+                        font-family: 'Inter', sans-serif;
+                        color: white;
+                        font-size: 7vw;
+                    }
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        color: $positioncolor;
+                        font-size: 5vw;
+                    }
+                    .my_mantra {
+                        display: flex;
+                        margin: 5vh 0 0 0;
+                        p {
+                            color: white;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 4.5vw;
+                            text-align: center;
+                        }
+                    }
+                    .learn_more {
+                        width: 50vw;
+                        height: 10vw;
+                        margin: 12vh 0 -15vh 0;
+                        border-radius: 5px;
+                        background-color: $portfolios;
+                        // background-color: $positioncolor;
+                        border: none;
+                        a {
+                            color: $languagewhite;
+                            color: white;
+                            // color: $darkblue;
+                            text-decoration: none;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+            .section_two {
+                background-color: $skillsteal;
+                height: 100vh;
+                .section_two_top {
+                    display: flex;
+                    .about_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_two_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 5vh 0 0 0;
+                    .about_content {
+                        // display: flex;
+                        // flex-direction: column;
+                        width: 82%;
+                        // text-align: center;
+                        color: white;
+                        font-family: 'Roboto', sans-serif;
+                        .about_page_Logo {
+                            display: flex;
+                            justify-content: center;
+                            margin: 4vh 0 4vh 0;
+                        }
+                    }
+                    // Download Resume Button
+                    .resume_button_div {
+                        #dload_resume {
+                            border: 2px solid $resumebutton;
+                            border-radius: 5px;
+                            background-color: $resumebutton;
+                            margin: 4vh 0 0 0;
+                            width: 50vw;
+                            height: 10vw;
+                            color: white;
+                            text-decoration: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: 'Inter', sans-serif;
+                        }
+                    }
+                }
+            }
+            .section_three {
+                background-color: $darkblue;
+                height: 100vh;
+                .section_three_top {
+                    .about_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_three_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 8vh 0 0 0; 
+                    .portfolio_squares {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5vh;
+                        justify-content: center;
+                        align-items: center;
+                        .portfolio_square {
+                            width: 80vw;
+                            height: 30vw;
+                            border: 1px solid $portfolios;
+                            border-radius: 10px;
+                            background-color: $portfolios;
+                            .app {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                // Move the create collab to center
+                                #create_collab {
+                                    margin-left: 9vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section_four {
+                background-color: $skillsteal;
+                height: 100vh;
+                .section_four_top {
+                    display: flex;
+                    .skills_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_four_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 6vh 0 0 0;
+                    gap: 3vh;
+                    // Let's size the FRONTEND CIRCLES
+                    .skill_circle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 2vh 0 1vh 0;
+                        .skill_back {
+                            width: 25vw;
+                            height: 25vw;
+                            border: 3px solid $mainblue;
+                            background-color: $skillsteal;
+                            // background-color: yellow;
+                            border-radius: 50%;
+                            // position: relative;
+                        }
+                        .skill_front {
+                            width: 23vw;
+                            height: 23vw;
+                            border: 1px solid $mainblue;
+                            background-color: $mainblue;
+                            border-radius: 50%;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            // html / css
+                            #shield {
+                                width: 14vw;
+                                height: 14vw;
+                                margin: 1vh 0 1vh 0;
+                            }
+                            // sass
+                            #sass {
+                                width: 12vw;
+                                height: 12vw;
+                                margin: 1vh 0 1vh 0;
+                            }
+                            #react {
+                                width: 12vw;
+                                height: 10vw;
+                                margin: 1vh 0 1vh 0;
+                            }
+                            #react_native {
+                                width: 14vw;
+                                height: 13vw;
+                                margin: 1.3vh 0 1vh 0;
+                            }
+                            #figma {
+                                width: 11vw;
+                                height: 10vw;
+                                margin: .8vh 0 1vh 0;
+                            }
+                            #javascript {
+                                width: 11vw;
+                                height: 11vw;
+                                margin: .8vh 0 1vh 0;
+                            }
+                            #python {
+                                width: 14vw;
+                                height: 14vw;
+                                margin: .8vh 0 1vh 0;
+                            }
+                            #php {
+                                width: 13vw;
+                                height: 13vw;
+                                margin: 0 0 1vh 0;
+                            }
+                            #nodejs {
+                                width: 12vw;
+                                height: 11vw;
+                                margin: 0 0 .4vh 0;
+                            }
+                            #django {
+                                width: 15vw;
+                                height: 13vw;
+                                // background-color: yellow;
+                                // margin: 0 0 1vh 0;
+                            }
+                            #aws {
+                                width: 12vw;
+                                height: 12vw;
+                                margin: 0 0 .4vh 0;
+                            }
+                            #heroku {
+                                width: 12vw;
+                                height: 12vw;
+                                margin: 0 0 .4vh 0;
+                            }
+                            p {
+                                color: white;
+                                font-family: 'Inter', sans-serif;
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                    // Let's style the SKILL TITLES
+                    .responsive_title {
+                        font-family: 'Julius Sans One', sans-serif;
+                        font-size: 1.3em;
+                        color: white;
+                        margin: 2vh 0 0 0;
+                    }
+                    .user_interface_title {
+                        font-family: 'Julius Sans One', sans-serif;
+                        font-size: 1.3em;
+                        color: white;
+                        margin: 2vh 0 0 0;
+                    }
+                    .scripting_title {
+                        font-family: 'Julius Sans One', sans-serif;
+                        font-size: 1.3em;
+                        color: white;
+                        margin: 2vh 0 0 0;
+                    }
+                    .backend_title {
+                        font-family: 'Julius Sans One', sans-serif;
+                        font-size: 1.3em;
+                        color: white;
+                        margin: 2vh 0 0 0;
+                    }
+                    // Let's size the UNDERLINES
+                    .skills_underline {
+                        height: .8vh;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: 3px 3px 5px $boxshadowcircles;
+                        background-color: $mainblue;
+                    }
+                    // RESPONSIVE DESIGN SECTION
+                    .responsive_design_div {
+                        display: flex;
+                        flex-direction: column;
+                        .responsive_design_circles {
+                            display: flex;
+                            gap: 1vw;
+                        }
+                    }
+                    // USER INTERFACE SECTION
+                    .user_interface_div {
+                        display: flex;
+                        flex-direction: column;
+                        .user_interface_circles {
+                            display: flex;
+                            gap: 1vw;
+                        }
+                    }
+                    // SCRIPTING SECTION
+                    .scripting_div {
+                        display: flex;
+                        flex-direction: column;
+                        .scripting_circles {
+                            display: flex;
+                            gap: 1vw;
+                        }
+                    }
+                    // BACKEND SECTION
+                    .backend_div {
+                        display: flex;
+                        flex-direction: column;
+                        .backend_circles {
+                            display: flex;
+                            gap: 1vw;
+                        }
+                    }
+                    // size the BACKEND CIRCLES
+                    .skill_circle_backend {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .skill_back_backend {
+                            width: 18.5vw;
+                            height: 18.5vw;
+                            border: 2px solid $mainblue;
+                            background-color: $skillsteal;
+                            // background-color: yellow;
+                            border-radius: 50%;
+                            // position: relative;
+                        }
+                        .skill_front_backend {
+                            width: 15.5vw;
+                            height: 15.5vw;
+                            border: 1px solid $mainblue;
+                            background-color: $mainblue;
+                            border-radius: 50%;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            p {
+                                color: white;
+                                font-family: 'Inter', sans-serif;
+                                font-size: .7em;
+                            }
+                        }
+                    }
+                }
+            }
+            .section_five {
+                background-color: $mainblue;
+                height: 100vh;
+                .section_five_top {
+                    display: flex;
+                    .experience_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_five_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5vh;
+                    margin: 5vh 0 0 0;
+                    .experience_box {
+                        width: 80vw;
+                        height: 45vw;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: $portfolios;
+                        display: flex;
+                        .vl {
+                            border-left: 2px solid white;
+                            height: 15vh;
+                            margin: 3vh 0 0 7vw;
+                        }
+                        // COURDEVELOPS
+                        .courdevelops_logo {
+                            margin: 4.5vh 0 0 7vw;
+                            #courdevelops {
+                                width: 25vw;
+                                height: 25vw;
+                            }
+                        }
+                        .courdevelops_description {
+                            margin: 7.5vh 0 0 2.5vw;
+                            .main_description {
+                                border: none;
+                                background-color: $portfolios;
+                                h1 {
+                                    color: white;
+                                    font-size: 1.3em;
+                                }
+                                p {
+                                    color: $jobdescription;
+                                }
+                            }
+                        }
+                        // R1RCM
+                        .r1rcm_logo {
+                            margin: 7vh 0 0 9vw;
+                            #r1rcm {
+                                width: 23vw;
+                                height: 15vw;
+                            }
+                        }
+                        .r1rcm_description {
+                            margin: 7.5vh 0 0 2.5vw;
+                            .main_description {
+                                border: none;
+                                background-color: $portfolios;
+                                h1 {
+                                    color: white;
+                                    font-size: 1.3em;
+                                }
+                                p {
+                                    color: $jobdescription;
+                                }
+                            }
+                        }
+                        // SLEA
+                        .slea_logo {
+                            margin: 5vh 0 0 9vw;
+                            #slea {
+                                width: 23vw;
+                                height: 23vw;
+                            }
+                        }
+                        .slea_description {
+                            margin: 7.5vh 0 0 2.5vw;
+                            .main_description {
+                                border: none;
+                                background-color: $portfolios;
+                            h1 {
+                                color: white;
+                                font-size: 1.3em;
+                            }
+                            p {
+                                color: $jobdescription;
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            .section_six {
+                background-color: $skillsteal;
+                height: 100vh;
+                .section_six_top {
+                    display: flex;
+                    .blog_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_six_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1vh;
+                    margin: 3vh 0 0 0;
+                    .blog_circle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        // margin: -1vh 0 -1vh 0;
+                        margin: 1vh 0 1vh 0;
+                        .blog_circle_back {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 52vw;
+                            height: 52vw;
+                            border: 3px solid $mainblue;
+                            background-color: $skillsteal;
+                            // background-color: yellow;
+                            border-radius: 50%;
+                        }
+                        .blog_circle_front {
+                            width: 49vw;
+                            height: 49vw;
+                            border: 1px solid $mainblue;
+                            background-color: $mainblue;
+                            border-radius: 50%;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            h1 {
+                                color: white;
+                                font-size: 5.5vw;
+                            }
+                        }
+                    }
+                    .vl {
+                        border-left: 2px solid $mainblue;
+                        height: 3vh;
+                    }
+                }
+            }
+            .section_seven {
+                background-color: $mainblue;
+                height: 100vh;
+                .section_seven_top {
+                    display: flex;
+                    .contact_title {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 10vw;
+                        color: white;
+                        margin: 5vh 0 0 10vw;
+                    }
+                }
+                .section_seven_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vh;
+                    margin: 5vh 0 0 0;
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 3vh;
+                        .input_div {
+                            display: flex;
+                            flex-direction: column;
+                            label {
+                                font-family: 'Inter', sans-serif;
+                                font-size: 1.5em;
+                                color: white;
+                            }
+                            input {
+                                background-color: $portfolios;
+                                border: none;
+                                border-radius: 5px;
+                                width: 78vw;
+                                height: 10vw;
+                            }
+                            textarea {
+                                background-color: $portfolios;
+                                height: 30vh;
+                                border: none;
+                                border-radius: 5px;
+                                resize: none;
+                            }
+                        }
+                        .submit_button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            #submitemail {
+                                background-color: $portfolios;
+                                border: none;
+                                border-radius: 5px;
+                                width: 78vw;
+                                height: 10vw;
+                                p {
+                                    color: white;
+                                    font-size: 1.5em;
+                                }
+                            }
+                        }
+                    }
+                    // FOOTER
+                    .poweredby {
+                        small {
+                            .tabletsocials {
+                                margin: 1vh 0 0 0vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 3vw;
+                                #github {
+                                    width: 14vw;
+                                    height: 14vw;
+                                }
+                                #linkedin {
+                                    width: 12vw;
+                                    height: 12vw;
+                                }
+                                #twitter {
+                                    width: 15vw;
+                                    height: 15vw;
+                                }
+                                #instagram {
+                                    width: 12vw;
+                                    height: 12vw;
+                                }
+                            }
+                        }
+                        .copyrights {
+                            display: flex;
+                            margin: 4vh 0 0 0;
+                            p {
+                                color: $portfolios;
+                                font-size: 1.2em;
+                                // font-weight: bold;
+                                font-family: 'Inter', sans-serif;
+                            }
+                            .courdev {
+                                color: $firstblue;
+                                font-family: 'Inter', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
