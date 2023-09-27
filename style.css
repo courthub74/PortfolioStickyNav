@@ -351,38 +351,38 @@
   align-items: center;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #shield {
-  width: 14vw;
-  height: 14vw;
+  width: 12vw;
+  height: 12vw;
   margin: 1vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
   width: 12vw;
   height: 12vw;
-  margin: 1vh 0 1vh 0;
+  margin: 0vh 0 0vh 0.8vw;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react {
   width: 12vw;
-  height: 10vw;
+  height: 12vw;
   margin: 1vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
-  width: 14vw;
-  height: 13vw;
-  margin: 1.3vh 0 1vh 0;
+  width: 15vw;
+  height: 14vw;
+  margin: 1vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
-  width: 11vw;
-  height: 10vw;
-  margin: 0.8vh 0 1vh 0;
+  width: 13.5vw;
+  height: 13vw;
+  margin: 1vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript {
-  width: 11vw;
-  height: 11vw;
+  width: 14vw;
+  height: 14vw;
   margin: 0.8vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #python {
-  width: 14vw;
-  height: 14vw;
+  width: 11vw;
+  height: 11vw;
   margin: 0.8vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #php {
