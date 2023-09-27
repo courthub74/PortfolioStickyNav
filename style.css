@@ -212,6 +212,22 @@
   align-items: center;
   margin: 8vh 0 0 0;
 }
+* body .container .section_three .section_three_bottom .app1content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+}
+* body .container .section_three .section_three_bottom .app1content p {
+  color: white;
+  text-align: center;
+}
 * body .container .section_three .section_three_bottom .portfolio_squares {
   display: flex;
   flex-direction: column;

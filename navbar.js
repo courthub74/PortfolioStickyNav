@@ -27,15 +27,7 @@ let job_description = document.querySelector('.you');
 
 // set a last scroll
 let lastScroll = 0;
-
-
-// The 2 NavBars
-
-// query the words 
-
-// set css class to opacity 0
-// when scroll up to opacity 1 
-
+ 
 // Write a function that makes the
     // navbar dissapear after reappearing on scroll up
         // and sitting idle for 5 seconds
@@ -53,6 +45,7 @@ let lastScroll = 0;
 
 // Perform a setInterval when calling the function
     // and store it in a variable
+    // We Need to measure it by scrolls
 // setInterval(out, 5000);
 
 // NOW the issue is to restart the process
@@ -89,26 +82,12 @@ window.addEventListener('scroll', function () {
         job_description.classList.add('appear');
         // Time the Navbar to dissapear again after
             // 5 Seconds
-        // setInterval(out, lastScroll);
-        // function out () {
-        //     console.log("It's been 5 seconds since your scroll");
-        //     top_navbar.classList.add('dissapear');
-        //     menu_burger.classList.add('dissapear');
-        // };
+       
         // also change the .you class
             // make it appear
         // This is at top of the page
         if (currentScroll === 0) {
             job_description.classList.remove('appear');
-            // terminate the out Interval
-            
-            // reverse out function
-            // function out_reverse () {
-            //     console.log("You have reversed the out function");
-            //     top_navbar.classList.remove('dissapear');
-            //     menu_burger.classList.remove('dissapear');
-            // };
-            // out_reverse();
         }
     } 
     // So you are incrementing each scroll
