@@ -223,8 +223,60 @@
   margin: -13vh 0 0 0vw;
   transition: ease-in 0.8s;
   z-index: 100;
+  position: fixed;
 }
 * body .container .section_three .section_three_bottom .app1content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app2content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app2content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app3content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app3content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app4content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app4content p {
   color: white;
   text-align: center;
 }

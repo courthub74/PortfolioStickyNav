@@ -313,6 +313,58 @@ $darkgrey: darkgrey;
                             margin: -13vh 0 0 0vw;
                             transition: ease-in .8s;
                             z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app2content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app3content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app4content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
                             p {
                                 color: white;
                                 text-align: center;
