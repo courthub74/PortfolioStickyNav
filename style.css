@@ -391,18 +391,19 @@
   margin: 0 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs {
-  width: 12vw;
-  height: 11vw;
+  width: 13vw;
+  height: 14vw;
   margin: 0 0 0.4vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #django {
-  width: 15vw;
-  height: 13vw;
+  width: 13vw;
+  height: 11vw;
+  margin: 0 1vw 0 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #aws {
-  width: 12vw;
-  height: 12vw;
-  margin: 0 0 0.4vh 0;
+  width: 15vw;
+  height: 15vw;
+  margin: 0.5vh 0 0.4vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku {
   width: 12vw;
