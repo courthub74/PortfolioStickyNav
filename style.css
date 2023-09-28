@@ -350,10 +350,47 @@
   justify-content: center;
   align-items: center;
 }
-* body .container .section_four .section_four_bottom .skill_circle .skill_front #shield {
+* body .container .section_four .section_four_bottom .skill_circle .skill_front .shield {
   width: 12vw;
   height: 12vw;
   margin: 1vh 0 1vh 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html {
+  transition: 0.7s all ease-in-out;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html.dissapear {
+  transition: 0.7s all ease-in-out;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description {
+  transition: 0.3s all ease-in;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css {
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
   width: 12vw;

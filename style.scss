@@ -444,11 +444,50 @@ $darkgrey: darkgrey;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            // html / css
-                            #shield {
+                            // html / css icons sizing
+                            .shield {
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 1vh 0 1vh 0;
+                            }
+                            // html
+                            #html {
+                                transition: .7s all ease-in-out;
+                                position: absolute;
+                            }
+                            #html.dissapear {
+                                transition: .7s all ease-in-out;
+                                opacity: 0;
+                            }
+                            #html_description {
+                                transition: .3s all ease-in;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #html_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // css
+                            #css {
+                                position: absolute;
+                            }
+                            #css.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #css_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #css_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             // sass
                             #sass {
