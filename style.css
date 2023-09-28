@@ -396,6 +396,7 @@
   width: 12vw;
   height: 12vw;
   margin: 0vh 0 0vh 0.8vw;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react {
   width: 12vw;

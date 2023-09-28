@@ -48,8 +48,18 @@ css_skill.addEventListener('click', function () {
     setTimeout(css_back_on, 3000);
 });
 
-// Sass
+// SASS
+
+// SASS BUTTON
 let sass_skill = document.getElementById('sass_skill');
+// SASS LOGO
+let sass_logo = document.getElementById('sass');
+// SASS DESCRIPTION
+let sass_descrip = document.getElementById('sass_description');
+// SASS EVENT LISTENER
+sass_skill.addEventListener('click', function () {
+    console.log("SASS Button");
+});
 // React
 let react_skill = document.getElementById('react');
 // Native
@@ -91,10 +101,6 @@ let heroku_skill = document.getElementById('heroku');
     // after 5 seconds:
         // reverse everything
 
-// SASS
-sass_skill.addEventListener('click', function () {
-    console.log("Sass Button");
-});
 // REACT
 react_skill.addEventListener('click', function () {
     console.log("React Button");
