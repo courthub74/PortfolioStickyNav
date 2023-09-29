@@ -461,7 +461,8 @@ $darkgrey: darkgrey;
                             }
                             #html_description {
                                 transition: .3s all ease-in;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
+                                // font-family: 'FuturaPT', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -496,56 +497,137 @@ $darkgrey: darkgrey;
                                 margin: 0vh 0 0vh .8vw;
                                 position: absolute;
                             }
+                            #sass.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #sass_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #sass_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // react
                             #react {
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 1vh 0 1vh 0;
+                                position: absolute;
                             }
+                            #react.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #react_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #react_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // react native
                             #react_native {
                                 width: 15vw;
                                 height: 14vw;
                                 margin: 1vh 0 1vh 0;
+                                position: absolute;
+                            }
+                            #react_native.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #react_native_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #react_native_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #figma {
                                 width: 13.5vw;
                                 height: 13vw;
                                 margin: 1vh 0 1vh 0;
+                                position: absolute;
+                            }
+                            #figma.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #figma_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #figma_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #javascript {
                                 width: 14vw;
                                 height: 14vw;
                                 margin: .8vh 0 1vh 0;
+                                position: absolute;
+                            }
+                            #javascript.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #javascript_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #javascript_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #python {
                                 width: 11vw;
                                 height: 11vw;
                                 margin: .8vh 0 1vh 0;
-                            }
-                            #php {
-                                width: 13vw;
-                                height: 13vw;
-                                margin: 0 0 1vh 0;
+                                position: absolute;
                             }
                             #nodejs {
                                 width: 13vw;
                                 height: 14vw;
                                 margin: 0 0 .4vh 0;
+                                position: absolute;
                             }
                             #django {
                                 width: 13vw;
                                 height: 11vw;
                                 // background-color: yellow;
                                 margin: 0 1vw 0 0;
+                                position: absolute;
                             }
                             #aws {
                                 width: 15vw;
                                 height: 15vw;
                                 margin: .5vh 0 .4vh 0;
+                                position: absolute;
                             }
                             #heroku {
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 0 0 .4vh 0;
+                                position: absolute;
                             }
                             p {
                                 color: white;

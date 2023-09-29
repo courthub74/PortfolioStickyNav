@@ -45,6 +45,7 @@ css_skill.addEventListener('click', function () {
         css_logo.classList.remove('dissapear');
         css_descrip.classList.remove('show');
     };
+    // call the function with a setTimeout for 3 seconds
     setTimeout(css_back_on, 3000);
 });
 
@@ -59,11 +60,66 @@ let sass_descrip = document.getElementById('sass_description');
 // SASS EVENT LISTENER
 sass_skill.addEventListener('click', function () {
     console.log("SASS Button");
+    // make the logo dissapear
+    sass_logo.classList.add('dissapear');
+    // make description appear
+    sass_descrip.classList.add('show');
+    // function to reset the button
+    function sass_back_on() {
+        sass_logo.classList.remove('dissapear');
+        sass_descrip.classList.remove('show');
+    };
+    // call the function with a setTimeout for 3 seconds
+    setTimeout(sass_back_on, 3000);
 });
-// React
-let react_skill = document.getElementById('react');
-// Native
-let native_skill = document.getElementById('react_native');
+
+// REACT 
+
+// REACT BUTTON
+let react_skill = document.getElementById('react_skill');
+// REACT LOGO
+let react_logo = document.getElementById('react');
+// REACT DESCRIPTION
+let react_descrip = document.getElementById('react_description');
+// REACT EVENT LISTENER
+react_skill.addEventListener('click', function () {
+    console.log("REACT Button");
+    // make the logo dissapear
+    react_logo.classList.add('dissapear');
+    // make description appear
+    react_descrip.classList.add('show');
+    // function to reset the button
+    function react_back_on() {
+        react_logo.classList.remove('dissapear');
+        react_descrip.classList.remove('show');
+    };
+    // call the function with a setTimeout for 3 seconds
+    setTimeout(react_back_on, 3000);
+});
+
+// REACT NATIVE
+
+// REACT NATIVE BUTTON
+let react_native_skill = document.getElementById('react_native_skill');
+// REACT NATIVE LOGO
+let react_native_logo = document.getElementById('react_native');
+// REACT NATIVE DESCRIPTION
+let react_native_descrip = document.getElementById('react_native_description');
+// REACT NATIVE EVENT LISTENER
+react_native_skill.addEventListener('click', function () {
+    console.log("REACT NATIVE Button");
+    // make the logo dissapear
+    react_native_logo.classList.add('dissapear');
+    // make description appear
+    react_native_descrip.classList.add('show');
+    // function to reset the button
+    function react_native_back_on() {
+        react_native_logo.classList.remove('dissapear');
+        react_native_descrip.classList.remove('show');
+    };
+    // call the function with a setTimeout for 3 seconds
+    setTimeout(react_native_back_on, 3000);
+});
 // Figma
 let figma_skill = document.getElementById('figma');
 // JavaScript
