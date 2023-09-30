@@ -313,6 +313,58 @@ $darkgrey: darkgrey;
                             margin: -13vh 0 0 0vw;
                             transition: ease-in .8s;
                             z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app2content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app3content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
+                            p {
+                                color: white;
+                                text-align: center;
+                            }
+                        }
+                        .app4content {
+                            border: 2px solid $portfolios;
+                            background-color: $portfolios;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 100%;
+                            width: 105%;
+                            height: 90vh;
+                            margin: -13vh 0 0 0vw;
+                            transition: ease-in .8s;
+                            z-index: 100;
+                            position: fixed;
                             p {
                                 color: white;
                                 text-align: center;
@@ -392,68 +444,190 @@ $darkgrey: darkgrey;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            // html / css
-                            #shield {
-                                width: 14vw;
-                                height: 14vw;
+                            // html / css icons sizing
+                            .shield {
+                                width: 12vw;
+                                height: 12vw;
                                 margin: 1vh 0 1vh 0;
+                            }
+                            // html
+                            #html {
+                                transition: .7s all ease-in-out;
+                                position: absolute;
+                            }
+                            #html.dissapear {
+                                transition: .7s all ease-in-out;
+                                opacity: 0;
+                            }
+                            #html_description {
+                                transition: .3s all ease-in;
+                                font-family: 'Roboto', sans-serif;
+                                // font-family: 'FuturaPT', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #html_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // css
+                            #css {
+                                position: absolute;
+                            }
+                            #css.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #css_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #css_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             // sass
                             #sass {
                                 width: 12vw;
                                 height: 12vw;
-                                margin: 1vh 0 1vh 0;
+                                margin: 0vh 0 0vh .8vw;
+                                position: absolute;
                             }
+                            #sass.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #sass_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #sass_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // react
                             #react {
                                 width: 12vw;
-                                height: 10vw;
+                                height: 12vw;
                                 margin: 1vh 0 1vh 0;
+                                position: absolute;
                             }
+                            #react.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #react_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #react_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            // react native
                             #react_native {
-                                width: 14vw;
-                                height: 13vw;
-                                margin: 1.3vh 0 1vh 0;
+                                width: 15vw;
+                                height: 14vw;
+                                margin: 1vh 0 1vh 0;
+                                position: absolute;
+                            }
+                            #react_native.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #react_native_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #react_native_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #figma {
-                                width: 11vw;
-                                height: 10vw;
-                                margin: .8vh 0 1vh 0;
+                                width: 13.5vw;
+                                height: 13vw;
+                                margin: 1vh 0 1vh 0;
+                                position: absolute;
+                            }
+                            #figma.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #figma_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #figma_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #javascript {
-                                width: 11vw;
-                                height: 11vw;
-                                margin: .8vh 0 1vh 0;
-                            }
-                            #python {
                                 width: 14vw;
                                 height: 14vw;
                                 margin: .8vh 0 1vh 0;
+                                position: absolute;
                             }
-                            #php {
-                                width: 13vw;
-                                height: 13vw;
-                                margin: 0 0 1vh 0;
+                            #javascript.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #javascript_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Inter', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #javascript_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
+                            #python {
+                                width: 11vw;
+                                height: 11vw;
+                                margin: .8vh 0 1vh 0;
+                                position: absolute;
                             }
                             #nodejs {
-                                width: 12vw;
-                                height: 11vw;
+                                width: 13vw;
+                                height: 14vw;
                                 margin: 0 0 .4vh 0;
+                                position: absolute;
                             }
                             #django {
-                                width: 15vw;
-                                height: 13vw;
+                                width: 13vw;
+                                height: 11vw;
                                 // background-color: yellow;
-                                // margin: 0 0 1vh 0;
+                                margin: 0 1vw 0 0;
+                                position: absolute;
                             }
                             #aws {
-                                width: 12vw;
-                                height: 12vw;
-                                margin: 0 0 .4vh 0;
+                                width: 15vw;
+                                height: 15vw;
+                                margin: .5vh 0 .4vh 0;
+                                position: absolute;
                             }
                             #heroku {
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 0 0 .4vh 0;
+                                position: absolute;
                             }
                             p {
                                 color: white;
@@ -592,74 +766,106 @@ $darkgrey: darkgrey;
                         border: none;
                         background-color: $portfolios;
                         display: flex;
+                        // ALL OF THE VERTICLE LINES
                         .vl {
                             border-left: 2px solid white;
                             height: 15vh;
                             margin: 3vh 0 0 7vw;
                         }
+                        #r1rcm_vl {
+                            margin-left: 9.9vw;
+                        }
                         // COURDEVELOPS
                         .courdevelops_logo {
                             margin: 4.5vh 0 0 7vw;
                             #courdevelops {
-                                width: 25vw;
-                                height: 25vw;
+                                width: 23vw;
+                                height: 23vw;
                             }
                         }
                         .courdevelops_description {
-                            margin: 7.5vh 0 0 2.5vw;
+                            // margin: 7.5vh 0 0 2.5vw;
+                            margin: 8vh 0 0 7vw;
+                            display: flex;
+                            flex-direction: column;
                             .main_description {
-                                border: none;
-                                background-color: $portfolios;
+                                position: absolute;
                                 h1 {
                                     color: white;
-                                    font-size: 1.3em;
+                                    font-size: 4vw;
+                                    font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
+                                    font-size: 3.3vw;
                                 }
+                            }
+                            .detailed_description {
+                                margin: -3vh 0 0 0;
+                                text-align: left;
+                                opacity: 0;
+                                h1 {
+                                    color: $jobdescription;
+                                    font-size: 3.5vw;
+                                    font-family: 'Inter', sans-serif;
+                                }
+                                p {
+                                    color: white;
+                                    font-size: 3.3vw;
+                                }
+                            }
+                            .detailed_description.show {
+                                opacity: 1;
                             }
                         }
                         // R1RCM
                         .r1rcm_logo {
                             margin: 7vh 0 0 9vw;
                             #r1rcm {
-                                width: 23vw;
-                                height: 15vw;
+                                width: 19vw;
+                                height: 14vw;
                             }
                         }
                         .r1rcm_description {
-                            margin: 7.5vh 0 0 2.5vw;
+                            // margin: 7.5vh 0 0 2.5vw;
+                            margin: 8vh 0 0 9vw;
                             .main_description {
                                 border: none;
                                 background-color: $portfolios;
                                 h1 {
                                     color: white;
-                                    font-size: 1.3em;
+                                    font-size: 4vw;
+                                    font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
+                                    font-size: 1em;
+                                    font-size: 3.3vw;
                                 }
                             }
                         }
                         // SLEA
                         .slea_logo {
-                            margin: 5vh 0 0 9vw;
+                            margin: 5vh 0 0 8vw;
                             #slea {
-                                width: 23vw;
-                                height: 23vw;
+                                width: 20vw;
+                                height: 21vw;
                             }
                         }
                         .slea_description {
-                            margin: 7.5vh 0 0 2.5vw;
+                            // margin: 7.5vh 0 0 2.5vw;
+                            margin: 8vh 0 0 7.5vw;
                             .main_description {
                                 border: none;
                                 background-color: $portfolios;
                             h1 {
                                 color: white;
-                                font-size: 1.3em;
+                                font-size: 4vw;
+                                font-family: 'Inter', sans-serif;
                             }
                             p {
                                 color: $jobdescription;
+                                font-size: 3.3vw;
                             }
                             }
                         }

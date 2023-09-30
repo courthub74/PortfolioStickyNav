@@ -223,8 +223,60 @@
   margin: -13vh 0 0 0vw;
   transition: ease-in 0.8s;
   z-index: 100;
+  position: fixed;
 }
 * body .container .section_three .section_three_bottom .app1content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app2content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app2content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app3content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app3content p {
+  color: white;
+  text-align: center;
+}
+* body .container .section_three .section_three_bottom .app4content {
+  border: 2px solid #36395D;
+  background-color: #36395D;
+  border-radius: 5px;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 90vh;
+  margin: -13vh 0 0 0vw;
+  transition: ease-in 0.8s;
+  z-index: 100;
+  position: fixed;
+}
+* body .container .section_three .section_three_bottom .app4content p {
   color: white;
   text-align: center;
 }
@@ -298,64 +350,182 @@
   justify-content: center;
   align-items: center;
 }
-* body .container .section_four .section_four_bottom .skill_circle .skill_front #shield {
-  width: 14vw;
-  height: 14vw;
+* body .container .section_four .section_four_bottom .skill_circle .skill_front .shield {
+  width: 12vw;
+  height: 12vw;
   margin: 1vh 0 1vh 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html {
+  transition: 0.7s all ease-in-out;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html.dissapear {
+  transition: 0.7s all ease-in-out;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description {
+  transition: 0.3s all ease-in;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css {
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
   width: 12vw;
   height: 12vw;
-  margin: 1vh 0 1vh 0;
+  margin: 0vh 0 0vh 0.8vw;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #sass.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #sass_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #sass_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react {
   width: 12vw;
-  height: 10vw;
+  height: 12vw;
   margin: 1vh 0 1vh 0;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
-  width: 14vw;
-  height: 13vw;
-  margin: 1.3vh 0 1vh 0;
+  width: 15vw;
+  height: 14vw;
+  margin: 1vh 0 1vh 0;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
-  width: 11vw;
-  height: 10vw;
-  margin: 0.8vh 0 1vh 0;
+  width: 13.5vw;
+  height: 13vw;
+  margin: 1vh 0 1vh 0;
+  position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #figma.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #figma_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #figma_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript {
-  width: 11vw;
-  height: 11vw;
-  margin: 0.8vh 0 1vh 0;
-}
-* body .container .section_four .section_four_bottom .skill_circle .skill_front #python {
   width: 14vw;
   height: 14vw;
   margin: 0.8vh 0 1vh 0;
+  position: absolute;
 }
-* body .container .section_four .section_four_bottom .skill_circle .skill_front #php {
-  width: 13vw;
-  height: 13vw;
-  margin: 0 0 1vh 0;
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript_description {
+  transition: 0.3s all ease-out;
+  font-family: "Inter", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #python {
+  width: 11vw;
+  height: 11vw;
+  margin: 0.8vh 0 1vh 0;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs {
-  width: 12vw;
-  height: 11vw;
+  width: 13vw;
+  height: 14vw;
   margin: 0 0 0.4vh 0;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #django {
-  width: 15vw;
-  height: 13vw;
+  width: 13vw;
+  height: 11vw;
+  margin: 0 1vw 0 0;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #aws {
-  width: 12vw;
-  height: 12vw;
-  margin: 0 0 0.4vh 0;
+  width: 15vw;
+  height: 15vw;
+  margin: 0.5vh 0 0.4vh 0;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku {
   width: 12vw;
   height: 12vw;
   margin: 0 0 0.4vh 0;
+  position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front p {
   color: white;
@@ -489,36 +659,59 @@
   height: 15vh;
   margin: 3vh 0 0 7vw;
 }
+* body .container .section_five .section_five_bottom .experience_box #r1rcm_vl {
+  margin-left: 9.9vw;
+}
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_logo {
   margin: 4.5vh 0 0 7vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_logo #courdevelops {
-  width: 25vw;
-  height: 25vw;
+  width: 23vw;
+  height: 23vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description {
-  margin: 7.5vh 0 0 2.5vw;
+  margin: 8vh 0 0 7vw;
+  display: flex;
+  flex-direction: column;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description {
-  border: none;
-  background-color: #36395D;
+  position: absolute;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description h1 {
   color: white;
-  font-size: 1.3em;
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description p {
   color: #00C6C3;
+  font-size: 3.3vw;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description {
+  margin: -3vh 0 0 0;
+  text-align: left;
+  opacity: 0;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description h1 {
+  color: #00C6C3;
+  font-size: 3.5vw;
+  font-family: "Inter", sans-serif;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description p {
+  color: white;
+  font-size: 3.3vw;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description.show {
+  opacity: 1;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_logo {
   margin: 7vh 0 0 9vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_logo #r1rcm {
-  width: 23vw;
-  height: 15vw;
+  width: 19vw;
+  height: 14vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description {
-  margin: 7.5vh 0 0 2.5vw;
+  margin: 8vh 0 0 9vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description {
   border: none;
@@ -526,20 +719,23 @@
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description h1 {
   color: white;
-  font-size: 1.3em;
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description p {
   color: #00C6C3;
+  font-size: 1em;
+  font-size: 3.3vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_logo {
-  margin: 5vh 0 0 9vw;
+  margin: 5vh 0 0 8vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_logo #slea {
-  width: 23vw;
-  height: 23vw;
+  width: 20vw;
+  height: 21vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description {
-  margin: 7.5vh 0 0 2.5vw;
+  margin: 8vh 0 0 7.5vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description {
   border: none;
@@ -547,10 +743,12 @@
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description h1 {
   color: white;
-  font-size: 1.3em;
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description p {
   color: #00C6C3;
+  font-size: 3.3vw;
 }
 * body .container .section_six {
   background-color: #146166;
