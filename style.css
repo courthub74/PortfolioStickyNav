@@ -44,6 +44,7 @@
   color: white;
   font-size: 4vw;
   font-family: "Inter", sans-serif;
+  font-weight: bold;
   margin: 0 0 0 0vw;
 }
 * body .container .the_top_nav .nav_top_contents .you #job_description {
@@ -670,9 +671,10 @@
   height: 23vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description {
-  margin: 8vh 0 0 7vw;
+  margin: 7.5vh 0 0 7vw;
   display: flex;
   flex-direction: column;
+  transition: 0.7s all ease-in;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description {
   position: absolute;
@@ -686,21 +688,31 @@
   color: #00C6C3;
   font-size: 3.3vw;
 }
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description.dissapear {
+  transition: 0.7s all ease-out;
+  opacity: 0;
+}
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description {
-  margin: -3vh 0 0 0;
+  margin: -4vh 0 0 0;
   text-align: left;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  transition: 0.7s all ease-in;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description h1 {
   color: #00C6C3;
   font-size: 3.5vw;
   font-family: "Inter", sans-serif;
+  margin: 0 0 0.5vh 0;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description p {
   color: white;
-  font-size: 3.3vw;
+  font-size: 3.2vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description.show {
+  transition: 0.7s all ease-in;
   opacity: 1;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_logo {
