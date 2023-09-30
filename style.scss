@@ -785,19 +785,37 @@ $darkgrey: darkgrey;
                         }
                         .courdevelops_description {
                             // margin: 7.5vh 0 0 2.5vw;
-                            margin: 7.5vh 0 0 7vw;
+                            margin: 8vh 0 0 7vw;
+                            display: flex;
+                            flex-direction: column;
                             .main_description {
-                                border: none;
-                                background-color: $portfolios;
+                                position: absolute;
                                 h1 {
                                     color: white;
-                                    font-size: 1.4em;
+                                    font-size: 4vw;
                                     font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
-                                    font-size: 1em;
+                                    font-size: 3.3vw;
                                 }
+                            }
+                            .detailed_description {
+                                margin: -3vh 0 0 0;
+                                text-align: left;
+                                opacity: 0;
+                                h1 {
+                                    color: $jobdescription;
+                                    font-size: 3.5vw;
+                                    font-family: 'Inter', sans-serif;
+                                }
+                                p {
+                                    color: white;
+                                    font-size: 3.3vw;
+                                }
+                            }
+                            .detailed_description.show {
+                                opacity: 1;
                             }
                         }
                         // R1RCM
@@ -810,18 +828,19 @@ $darkgrey: darkgrey;
                         }
                         .r1rcm_description {
                             // margin: 7.5vh 0 0 2.5vw;
-                            margin: 7.5vh 0 0 9vw;
+                            margin: 8vh 0 0 9vw;
                             .main_description {
                                 border: none;
                                 background-color: $portfolios;
                                 h1 {
                                     color: white;
-                                    font-size: 1.4em;
+                                    font-size: 4vw;
                                     font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
                                     font-size: 1em;
+                                    font-size: 3.3vw;
                                 }
                             }
                         }
@@ -835,17 +854,18 @@ $darkgrey: darkgrey;
                         }
                         .slea_description {
                             // margin: 7.5vh 0 0 2.5vw;
-                            margin: 7.5vh 0 0 7vw;
+                            margin: 8vh 0 0 7.5vw;
                             .main_description {
                                 border: none;
                                 background-color: $portfolios;
                             h1 {
                                 color: white;
-                                font-size: 1.4em;
+                                font-size: 4vw;
                                 font-family: 'Inter', sans-serif;
                             }
                             p {
                                 color: $jobdescription;
+                                font-size: 3.3vw;
                             }
                             }
                         }

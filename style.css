@@ -670,20 +670,38 @@
   height: 23vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description {
-  margin: 7.5vh 0 0 7vw;
+  margin: 8vh 0 0 7vw;
+  display: flex;
+  flex-direction: column;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description {
-  border: none;
-  background-color: #36395D;
+  position: absolute;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description h1 {
   color: white;
-  font-size: 1.4em;
+  font-size: 4vw;
   font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .courdevelops_description .main_description p {
   color: #00C6C3;
-  font-size: 1em;
+  font-size: 3.3vw;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description {
+  margin: -3vh 0 0 0;
+  text-align: left;
+  opacity: 0;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description h1 {
+  color: #00C6C3;
+  font-size: 3.5vw;
+  font-family: "Inter", sans-serif;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description p {
+  color: white;
+  font-size: 3.3vw;
+}
+* body .container .section_five .section_five_bottom .experience_box .courdevelops_description .detailed_description.show {
+  opacity: 1;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_logo {
   margin: 7vh 0 0 9vw;
@@ -693,7 +711,7 @@
   height: 14vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description {
-  margin: 7.5vh 0 0 9vw;
+  margin: 8vh 0 0 9vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description {
   border: none;
@@ -701,12 +719,13 @@
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description h1 {
   color: white;
-  font-size: 1.4em;
+  font-size: 4vw;
   font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .r1rcm_description .main_description p {
   color: #00C6C3;
   font-size: 1em;
+  font-size: 3.3vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_logo {
   margin: 5vh 0 0 8vw;
@@ -716,7 +735,7 @@
   height: 21vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description {
-  margin: 7.5vh 0 0 7vw;
+  margin: 8vh 0 0 7.5vw;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description {
   border: none;
@@ -724,11 +743,12 @@
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description h1 {
   color: white;
-  font-size: 1.4em;
+  font-size: 4vw;
   font-family: "Inter", sans-serif;
 }
 * body .container .section_five .section_five_bottom .experience_box .slea_description .main_description p {
   color: #00C6C3;
+  font-size: 3.3vw;
 }
 * body .container .section_six {
   background-color: #146166;
