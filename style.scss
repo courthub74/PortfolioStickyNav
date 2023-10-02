@@ -188,6 +188,7 @@ $darkgrey: darkgrey;
                         height: 60vw;
                         border: 7px solid $positioncolor;
                         border-radius: 50%;
+                        box-shadow: 3px 3px 2px $boxshadowcircles;
                     }
                 }
                 .section_one_content {
@@ -218,13 +219,14 @@ $darkgrey: darkgrey;
                         }
                     }
                     .learn_more {
-                        width: 50vw;
+                        width: 60vw;
                         height: 10vw;
                         margin: 12vh 0 -15vh 0;
                         border-radius: 5px;
                         background-color: $portfolios;
                         // background-color: $positioncolor;
                         border: none;
+                        box-shadow: 5px 5px 4px $boxshadowcircles;
                         a {
                             color: $languagewhite;
                             color: white;
@@ -272,8 +274,10 @@ $darkgrey: darkgrey;
                             border: 2px solid $resumebutton;
                             border-radius: 5px;
                             background-color: $resumebutton;
+                            box-shadow: 1px 1px 2px $boxshadowcircles;
+                            box-shadow: 5px 5px 4px #0e3f42;
                             margin: 4vh 0 0 0;
-                            width: 50vw;
+                            width: 60vw;
                             height: 10vw;
                             color: white;
                             text-decoration: none;
@@ -383,6 +387,11 @@ $darkgrey: darkgrey;
                             width: 80vw;
                             height: 30vw;
                             border: 1px solid $portfolios;
+                            // border: 3px solid $skillswhite;
+                            box-shadow: 6px 6px 5px $boxshadowcircles;
+                            box-shadow: 6px 6px 10px black;
+                            // box-shadow: 1px 1px 4px $skillswhite;
+                            // box-shadow: 3px 3px 5px $positioncolor;
                             border-radius: 10px;
                             background-color: $portfolios;
                             .app {
@@ -430,6 +439,8 @@ $darkgrey: darkgrey;
                             height: 25vw;
                             border: 3px solid $mainblue;
                             background-color: $skillsteal;
+                            box-shadow: 2px 2px $boxshadowcircles;
+                            // box-shadow: 2px 2px black;
                             // background-color: yellow;
                             border-radius: 50%;
                             // position: relative;
@@ -445,6 +456,7 @@ $darkgrey: darkgrey;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
+                            // box-shadow: 1px 1px 3px $boxshadowcircles;
                             // html / css icons sizing
                             .shield {
                                 width: 12vw;
@@ -765,17 +777,21 @@ $darkgrey: darkgrey;
                         height: 45vw;
                         border-radius: 10px;
                         border: none;
+                        // border: 3px solid $skillswhite;
+                        box-shadow: 3px 3px 5px $positioncolor;
+                        box-shadow: 4px 4px 5px $boxshadowcircles;
+                        box-shadow: 6px 6px 10px black;
                         background-color: $portfolios;
                         display: flex;
                         // ALL OF THE VERTICLE LINES
-                        .vl {
-                            border-left: 2px solid white;
-                            height: 15vh;
-                            margin: 3vh 0 0 7vw;
-                        }
-                        #r1rcm_vl {
-                            margin-left: 9.9vw;
-                        }
+                        // .vl {
+                        //     border-left: 2px solid white;
+                        //     height: 15vh;
+                        //     margin: 3vh 0 0 7vw;
+                        // }
+                        // #r1rcm_vl {
+                        //     margin-left: 9.9vw;
+                        // }
                         // COURDEVELOPS
                         .courdevelops_logo {
                             margin: 4.5vh 0 0 7vw;
@@ -789,17 +805,18 @@ $darkgrey: darkgrey;
                             margin: 7.5vh 0 0 7vw;
                             display: flex;
                             flex-direction: column;
-                            transition: .7s all ease-in;
+                            // transition: 1s all ease-in;
                             .main_description {
+                                transition: .9s all ease-in;
                                 position: absolute;
                                 h1 {
                                     color: white;
-                                    font-size: 4vw;
+                                    font-size: 5vw;
                                     font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
-                                    font-size: 3.3vw;
+                                    font-size: 3.5vw;
                                 }
                             }
                             .main_description.dissapear {
@@ -813,7 +830,7 @@ $darkgrey: darkgrey;
                                 display: flex;
                                 flex-direction: column;
                                 gap: 1vh;
-                                transition: .7s all ease-in;
+                                transition: .1s all ease-in;
                                 h1 {
                                     color: $jobdescription;
                                     font-size: 3.5vw;
@@ -826,7 +843,7 @@ $darkgrey: darkgrey;
                                 }
                             }
                             .detailed_description.show {
-                                transition: .7s all ease-in;
+                                transition: .9s all ease-in;
                                 opacity: 1;
                             }
                         }
@@ -842,17 +859,18 @@ $darkgrey: darkgrey;
                             // margin: 7.5vh 0 0 2.5vw;
                             margin: 8vh 0 0 9vw;
                             .main_description {
+                                transition: .9s all ease-in;
                                 border: none;
                                 background-color: $portfolios;
                                 h1 {
                                     color: white;
-                                    font-size: 4vw;
+                                    font-size: 5vw;
                                     font-family: 'Inter', sans-serif;
                                 }
                                 p {
                                     color: $jobdescription;
                                     font-size: 1em;
-                                    font-size: 3.3vw;
+                                    font-size: 3.5vw;
                                 }
                             }
                         }
@@ -868,16 +886,17 @@ $darkgrey: darkgrey;
                             // margin: 7.5vh 0 0 2.5vw;
                             margin: 8vh 0 0 7.5vw;
                             .main_description {
+                                transition: .9s all ease-in;
                                 border: none;
                                 background-color: $portfolios;
                             h1 {
                                 color: white;
-                                font-size: 4vw;
+                                font-size: 5vw;
                                 font-family: 'Inter', sans-serif;
                             }
                             p {
                                 color: $jobdescription;
-                                font-size: 3.3vw;
+                                font-size: 3.5vw;
                             }
                             }
                         }
@@ -903,6 +922,85 @@ $darkgrey: darkgrey;
                     align-items: center;
                     gap: 1vh;
                     margin: 3vh 0 0 0;
+                    // Blog Slide In Content
+
+                    // Blog 1 Background
+                    .blog1content {
+                        background-color: $skillsteal;
+                        height: 100vh;
+                        width: 100%;
+                        // border: 2px dotted $mainblue;
+                        margin: -14vh 0 0 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .blog1outline {
+                            border: 3px solid $mainblue;
+                            height: 75vh;
+                            width: 85%;
+                            margin: 0 0 -12vh 0;
+                            z-index: 98;
+                            .top_blog_circle_back {
+                                margin: -14vh 0 0 15vw;
+                                border: 3px solid $mainblue;
+                                background-color: $skillsteal;
+                                border-radius: 50%;
+                                width: 55vw;
+                                height: 55vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 100;
+                                .top_blog_circle_front {
+                                    width: 50vw;
+                                    height: 50vw;
+                                    background-color: $mainblue;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    h2 {
+                                        color: white;
+                                        font-family: 'Inter', sans-serif;
+                                        text-align: center;
+                                    }
+                                    p {
+                                        color: white;
+                                        font-family: 'Inter', sans-serif;
+                                        font-size: 3vw;
+                                        padding: 1vh 0 0 0;
+                                    }
+                                }
+                            }
+                            // Blog 1 Content
+                            .blog_one_content_outline {
+                                // border: 1px dotted white;
+                                height: 60%;
+                                width: 80%;
+                                margin: 5vh 0 0 8vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                overflow: hidden;
+                                overflow-y: scroll;
+                                .blog_one_content {
+                                    color: white;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 3.5vw;
+                                }
+                            }
+                            // Bottom Blog 1 Circle
+                            .bottom_blog_circle_back {
+                                width: 50vw;
+                                height: 50vw;
+                                border: 3px solid $mainblue;
+                                border-radius: 50%;
+                                margin: 4vh 0 0 16vw;
+                            }
+                        }
+                    }
+                    // Blog 1 Border
                     .blog_circle {
                         display: flex;
                         flex-direction: column;
@@ -920,6 +1018,8 @@ $darkgrey: darkgrey;
                             background-color: $skillsteal;
                             // background-color: yellow;
                             border-radius: 50%;
+                            // box-shadow: 3px 3px 2px $boxshadowcircles;
+                            box-shadow: 2px 2px $boxshadowcircles;
                         }
                         .blog_circle_front {
                             width: 49vw;
@@ -997,6 +1097,7 @@ $darkgrey: darkgrey;
                             #submitemail {
                                 background-color: $portfolios;
                                 border: none;
+                                box-shadow: 3px 3px 2px $boxshadowcircles;
                                 border-radius: 5px;
                                 width: 78vw;
                                 height: 10vw;
