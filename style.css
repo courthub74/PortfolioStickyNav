@@ -391,7 +391,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -412,7 +412,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -433,7 +433,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -454,7 +454,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -475,7 +475,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -496,7 +496,7 @@
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript_description {
   transition: 0.3s all ease-out;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
   opacity: 0;
@@ -511,11 +511,37 @@
   margin: 0.8vh 0 1vh 0;
   position: absolute;
 }
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #python.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #python_description.show {
+  transition: 0.3s all ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs {
   width: 13vw;
   height: 14vw;
   margin: 0 0 0.4vh 0;
   position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs_description {
+  transition: 0.3s all ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #django {
   width: 13vw;
@@ -523,17 +549,62 @@
   margin: 0 1vw 0 0;
   position: absolute;
 }
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #django.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #django_description {
+  transition: 0.3s all ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #django_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
+}
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #aws {
   width: 15vw;
   height: 15vw;
   margin: 0.5vh 0 0.4vh 0;
   position: absolute;
 }
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #aws.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #aws_description {
+  transition: 0.3s all ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #aws_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
+}
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku {
   width: 12vw;
   height: 12vw;
   margin: 0 0 0.4vh 0;
   position: absolute;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku.dissapear {
+  transition: 0.7s all ease-in;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku_description {
+  transition: 0.3s all ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
+  opacity: 0;
+}
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku_description.show {
+  transition: 0.7s all ease-in;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front p {
   color: white;
@@ -788,6 +859,9 @@
   margin: 3vh 0 0 0;
 }
 * body .container .section_six .section_six_bottom .blog1content {
+  position: fixed;
+  top: 0;
+  left: 100%;
   background-color: #146166;
   height: 100vh;
   width: 100%;

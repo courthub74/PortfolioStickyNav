@@ -494,7 +494,7 @@ $darkgrey: darkgrey;
                             }
                             #css_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -516,7 +516,7 @@ $darkgrey: darkgrey;
                             }
                             #sass_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -538,7 +538,7 @@ $darkgrey: darkgrey;
                             }
                             #react_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -560,7 +560,7 @@ $darkgrey: darkgrey;
                             }
                             #react_native_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -581,7 +581,7 @@ $darkgrey: darkgrey;
                             }
                             #figma_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -602,7 +602,7 @@ $darkgrey: darkgrey;
                             }
                             #javascript_description {
                                 transition: .3s all ease-out;
-                                font-family: 'Inter', sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
                                 opacity: 0;
@@ -617,18 +617,58 @@ $darkgrey: darkgrey;
                                 margin: .8vh 0 1vh 0;
                                 position: absolute;
                             }
+                            #python.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #python_description.show {
+                                transition: .3s all ease-out;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
                             #nodejs {
                                 width: 13vw;
                                 height: 14vw;
                                 margin: 0 0 .4vh 0;
                                 position: absolute;
                             }
+                            #nodejs.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #nodejs_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #nodejs_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
                             #django {
                                 width: 13vw;
                                 height: 11vw;
-                                // background-color: yellow;
                                 margin: 0 1vw 0 0;
                                 position: absolute;
+                            }
+                            #django.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #django_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #django_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             #aws {
                                 width: 15vw;
@@ -636,11 +676,41 @@ $darkgrey: darkgrey;
                                 margin: .5vh 0 .4vh 0;
                                 position: absolute;
                             }
+                            #aws.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #aws_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #aws_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
+                            }
                             #heroku {
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 0 0 .4vh 0;
                                 position: absolute;
+                            }
+                            #heroku.dissapear {
+                                transition: .7s all ease-in;
+                                opacity: 0;
+                            }
+                            #heroku_description {
+                                transition: .3s all ease-out;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
+                                opacity: 0;
+                            }
+                            #heroku_description.show {
+                                transition: .7s all ease-in;
+                                opacity: 1;
                             }
                             p {
                                 color: white;
@@ -923,13 +993,21 @@ $darkgrey: darkgrey;
                     gap: 1vh;
                     margin: 3vh 0 0 0;
                     // Blog Slide In Content
-
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
                     // Blog 1 Background
                     .blog1content {
+                        position: fixed;
+                        top: 0;
+                        left: 100%;
                         background-color: $skillsteal;
                         height: 100vh;
                         width: 100%;
-                        // border: 2px dotted $mainblue;
                         margin: -14vh 0 0 0;
                         display: flex;
                         justify-content: center;
@@ -1032,6 +1110,17 @@ $darkgrey: darkgrey;
                             }
                         }
                     }
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    ////////////////////////
+                    /// 
+                    
+                    // BLOG CIRCLES TO BE CLICKED
+
                     // Blog 1 Border
                     .blog_circle {
                         display: flex;
