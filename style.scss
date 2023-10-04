@@ -978,7 +978,7 @@ $darkgrey: darkgrey;
                                 // border: 1px dotted white;
                                 height: 60%;
                                 width: 80%;
-                                margin: 5vh 0 0 8vw;
+                                margin: 3vh 0 0 8vw;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -992,11 +992,43 @@ $darkgrey: darkgrey;
                             }
                             // Bottom Blog 1 Circle
                             .bottom_blog_circle_back {
-                                width: 50vw;
-                                height: 50vw;
+                                width: 55vw;
+                                height: 27.3vw;
                                 border: 3px solid $mainblue;
-                                border-radius: 50%;
-                                margin: 4vh 0 0 16vw;
+                                border-bottom-color: $skillsteal;
+                                border-radius: 150px 150px 0 0;
+                                background-color: $skillsteal;
+                                margin: 2vh 0 0 14.5vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 100;
+                                .front_blog_circle_front {
+                                    width: 50vw;
+                                    height: 26.5vw;
+                                    background-color: $mainblue;
+                                    border-radius: 125px 125px 0 0;
+                                    z-index: 98;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: .9vh 0 0 0;
+                                    .blog_socials {
+                                        margin: 2.5vh 0 0 0;
+                                        #twitter {
+                                            width: 12vw;
+                                            height: 12vw;
+                                        }
+                                        #linkedin {
+                                            width: 12vw;
+                                            height: 12vw;
+                                        }
+                                        #share {
+                                            width: 11.5vw;
+                                            height: 11.5vw;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
