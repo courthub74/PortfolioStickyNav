@@ -1,5 +1,13 @@
 // Skills Buttons
 
+// add event listener to each button
+
+// in the event listener:
+    // make the icon dissapear
+    // make the title appear
+    // after 5 seconds:
+        // reverse everything
+
 // HTML
 
 // HTML BUTTON
@@ -120,9 +128,35 @@ react_native_skill.addEventListener('click', function () {
     // call the function with a setTimeout for 3 seconds
     setTimeout(react_native_back_on, 3000);
 });
-// Figma
-let figma_skill = document.getElementById('figma');
-// JavaScript
+
+// FIGMA
+
+// FIGMA BUTTON
+let figma_skill = document.getElementById('figma_skill');
+// FIGMA LOGO
+let figma_logo = document.getElementById('figma');
+// FIGMA DESCRIPTION
+let figma_description = document.getElementById('figma_description');
+// FIGMA EVENT LISTENER
+figma_skill.addEventListener('click', function () {
+    // Test Print
+    console.log("Figma Button");
+    // Make the Logo Dissapear
+    figma_logo.classList.add('dissapear');
+    // Make the description appear
+    figma_description.classList.add('show');
+    // function to reset the button
+    function figma_back_on () {
+        figma_logo.classList.remove('dissapear');
+        figma_description.classList.remove('show');
+    };
+    // call the function with a setTimeout for 3 seconds
+    setTimeout(figma_back_on, 3000);
+});
+
+
+
+// JAVASCRIPT
 let javascript_skill = document.getElementById('javascript');
 // Python
 let python_skill = document.getElementById('python');
@@ -147,49 +181,3 @@ let heroku_skill = document.getElementById('heroku');
 // function html_words_off() {
 //     html_descrip.classList.remove('show');
 // };
-
-
-// add event listener to each button
-
-// in the event listener:
-    // make the icon dissapear
-    // make the title appear
-    // after 5 seconds:
-        // reverse everything
-
-// REACT
-react_skill.addEventListener('click', function () {
-    console.log("React Button");
-});
-// NATIVE
-native_skill.addEventListener('click', function () {
-    console.log("Native Button");
-});
-// FIGMA
-figma_skill.addEventListener('click', function () {
-    console.log("Figma Button");
-});
-// JAVASCRIPT
-javascript_skill.addEventListener('click', function () {
-    console.log("JavaScript Button");
-});
-// PYTHON
-python_skill.addEventListener('click', function () {
-    console.log("Python Button");
-});
-// NODE JS
-nodejs_skill.addEventListener('click', function () {
-    console.log("Node JS Button");
-});
-// DJANGO
-django_skill.addEventListener('click', function () {
-    console.log("Django Button");
-});
-// AWS
-aws_skill.addEventListener('click', function () {
-    console.log("AWS Button");
-});
-// HEROKU
-heroku_skill.addEventListener('click', function () {
-    console.log("Heroku Button");
-});

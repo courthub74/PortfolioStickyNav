@@ -49,7 +49,7 @@
 }
 * body .container .the_top_nav .nav_top_contents .you #job_description {
   color: #8081AA;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-family: "Roboto", sans-serif;
 }
 * body .container .the_top_nav .nav_top_contents .you.appear {
@@ -98,18 +98,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: -25vh 0 0 0;
+  margin: -30vh 0 0 0;
 }
 * body .container .section_one .section_one_headshot #home_headshot {
-  width: 55vw;
-  height: 55vw;
+  width: 45vw;
+  height: 45vw;
   border-radius: 50%;
   position: absolute;
 }
 * body .container .section_one .section_one_headshot .back_circle {
-  width: 60vw;
-  height: 60vw;
+  width: 50vw;
+  height: 50vw;
   border: 7px solid #8081AA;
+  border: 10px solid #36395D;
   border-radius: 50%;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.521);
 }
@@ -118,21 +119,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0 0 0;
+  margin: 6vh 0 0 0;
 }
-* body .container .section_one .section_one_content h1 {
+* body .container .section_one .section_one_content .home_name {
+  margin: 0 0 1.5vh 0;
+}
+* body .container .section_one .section_one_content .home_name h1 {
   font-family: "Inter", sans-serif;
   color: white;
-  font-size: 7vw;
+  font-size: 8.5vw;
 }
-* body .container .section_one .section_one_content p {
+* body .container .section_one .section_one_content .job_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 11vw;
+  background-color: #36395D;
+  border-radius: 5px;
+}
+* body .container .section_one .section_one_content .job_description p {
   font-family: "Roboto", sans-serif;
   color: #8081AA;
-  font-size: 5vw;
+  font-size: 20px;
 }
 * body .container .section_one .section_one_content .my_mantra {
   display: flex;
-  margin: 5vh 0 0 0;
+  margin: 10vh 0 0 0;
 }
 * body .container .section_one .section_one_content .my_mantra p {
   color: white;
@@ -141,9 +154,9 @@
   text-align: center;
 }
 * body .container .section_one .section_one_content .learn_more {
-  width: 60vw;
+  width: 70vw;
   height: 10vw;
-  margin: 12vh 0 -15vh 0;
+  margin: 13vh 0 -15vh 0;
   border-radius: 5px;
   background-color: #36395D;
   border: none;
@@ -192,7 +205,7 @@
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
   box-shadow: 5px 5px 4px #0e3f42;
   margin: 4vh 0 0 0;
-  width: 60vw;
+  width: 70vw;
   height: 10vw;
   color: white;
   text-decoration: none;
@@ -364,21 +377,21 @@
   margin: 1vh 0 1vh 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #html {
-  transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #html.dissapear {
-  transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description {
-  transition: 0.3s all ease-in;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #html_description.show {
+  transition: 0.5s all ease-in;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }
@@ -386,101 +399,101 @@
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #css.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #css_description.show {
+  transition: 0.5s all ease-in;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass {
+  transition: 0.7s all ease-in;
   width: 12vw;
   height: 12vw;
   margin: 0vh 0 0vh 0.8vw;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #sass_description.show {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react {
+  transition: 0.7s all ease-in;
   width: 12vw;
   height: 12vw;
   margin: 1vh 0 1vh 0;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_description.show {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native {
+  transition: 0.7s all ease-in;
   width: 15vw;
   height: 14vw;
   margin: 1vh 0 1vh 0;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #react_native_description.show {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma {
+  transition: 0.7s all ease-in;
   width: 13.5vw;
   height: 13vw;
   margin: 1vh 0 1vh 0;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #figma_description.show {
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   transition: 0.7s all ease-in;
   opacity: 1;
 }

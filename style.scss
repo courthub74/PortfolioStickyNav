@@ -107,7 +107,7 @@ $darkgrey: darkgrey;
                         }
                         #job_description {
                             color: $positioncolor;
-                            font-size: 3vw;
+                            font-size: 3.5vw;
                             font-family: 'Roboto', sans-serif;
                         }
                     }
@@ -176,17 +176,18 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin: -25vh 0 0 0;
+                    margin: -30vh 0 0 0;
                     #home_headshot {
-                        width: 55vw;
-                        height: 55vw;
+                        width: 45vw;
+                        height: 45vw;
                         border-radius: 50%; 
                         position: absolute;  
                     }
                     .back_circle {
-                        width: 60vw;
-                        height: 60vw;
+                        width: 50vw;
+                        height: 50vw;
                         border: 7px solid $positioncolor;
+                        border: 10px solid $portfolios;
                         border-radius: 50%;
                         box-shadow: 3px 3px 2px $boxshadowcircles;
                     }
@@ -196,32 +197,47 @@ $darkgrey: darkgrey;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin: 5vh 0 0 0;
+                    margin: 6vh 0 0 0;
                     // height: 100vh;
-                    h1 {
-                        font-family: 'Inter', sans-serif;
-                        color: white;
-                        font-size: 7vw;
+                    .home_name {
+                        margin: 0 0 1.5vh 0;
+                        h1 {
+                            font-family: 'Inter', sans-serif;
+                            color: white;
+                            // color: $positioncolor;
+                            font-size: 8.5vw;
+                        }
                     }
-                    p {
-                        font-family: 'Roboto', sans-serif;
-                        color: $positioncolor;
-                        font-size: 5vw;
+                    .job_description {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70vw;
+                        height: 11vw;
+                        background-color: $portfolios;
+                        border-radius: 5px;
+                        p {
+                            font-family: 'Roboto', sans-serif;
+                            color: $positioncolor;
+                            // color: white;
+                            font-size: 20px;
+                        }
                     }
                     .my_mantra {
                         display: flex;
-                        margin: 5vh 0 0 0;
+                        margin: 10vh 0 0 0;
                         p {
                             color: white;
+                            // color: $positioncolor;
                             font-family: 'Roboto', sans-serif;
                             font-size: 4.5vw;
                             text-align: center;
                         }
                     }
                     .learn_more {
-                        width: 60vw;
+                        width: 70vw;
                         height: 10vw;
-                        margin: 12vh 0 -15vh 0;
+                        margin: 13vh 0 -15vh 0;
                         border-radius: 5px;
                         background-color: $portfolios;
                         // background-color: $positioncolor;
@@ -277,7 +293,7 @@ $darkgrey: darkgrey;
                             box-shadow: 1px 1px 2px $boxshadowcircles;
                             box-shadow: 5px 5px 4px #0e3f42;
                             margin: 4vh 0 0 0;
-                            width: 60vw;
+                            width: 70vw;
                             height: 10vw;
                             color: white;
                             text-decoration: none;
@@ -465,22 +481,21 @@ $darkgrey: darkgrey;
                             }
                             // html
                             #html {
-                                transition: .7s all ease-in-out;
+                                transition: .7s all ease-in;
                                 position: absolute;
                             }
                             #html.dissapear {
-                                transition: .7s all ease-in-out;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #html_description {
-                                transition: .3s all ease-in;
-                                font-family: 'Roboto', sans-serif;
-                                // font-family: 'FuturaPT', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #html_description.show {
+                                transition: .5s all ease-in;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
@@ -489,104 +504,104 @@ $darkgrey: darkgrey;
                                 position: absolute;
                             }
                             #css.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #css_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #css_description.show {
+                                transition: .5s all ease-in;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
                             // sass
                             #sass {
+                                transition: .7s all ease-in;
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 0vh 0 0vh .8vw;
                                 position: absolute;
                             }
                             #sass.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #sass_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #sass_description.show {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
                             // react
                             #react {
+                                transition: .7s all ease-in;
                                 width: 12vw;
                                 height: 12vw;
                                 margin: 1vh 0 1vh 0;
                                 position: absolute;
                             }
                             #react.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #react_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #react_description.show {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
                             // react native
                             #react_native {
+                                transition: .7s all ease-in;
                                 width: 15vw;
                                 height: 14vw;
                                 margin: 1vh 0 1vh 0;
                                 position: absolute;
                             }
                             #react_native.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #react_native_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #react_native_description.show {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
                             #figma {
+                                transition: .7s all ease-in;
                                 width: 13.5vw;
                                 height: 13vw;
                                 margin: 1vh 0 1vh 0;
                                 position: absolute;
                             }
                             #figma.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #figma_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #figma_description.show {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
