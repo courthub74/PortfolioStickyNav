@@ -231,6 +231,7 @@ $darkgrey: darkgrey;
                             // color: $positioncolor;
                             font-family: 'Roboto', sans-serif;
                             font-size: 4.5vw;
+                            font-weight: bold;
                             text-align: center;
                         }
                     }
@@ -606,24 +607,24 @@ $darkgrey: darkgrey;
                                 opacity: 1;
                             }
                             #javascript {
+                                transition: .7s all ease-in;
                                 width: 14vw;
                                 height: 14vw;
                                 margin: .8vh 0 1vh 0;
                                 position: absolute;
                             }
                             #javascript.dissapear {
-                                transition: .7s all ease-in;
+                                transition: .7s all ease-out;
                                 opacity: 0;
                             }
                             #javascript_description {
-                                transition: .3s all ease-out;
-                                font-family: 'Roboto', sans-serif;
-                                font-size: 4vw;
-                                color: white;
                                 opacity: 0;
                             }
                             #javascript_description.show {
                                 transition: .7s all ease-in;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 4vw;
+                                color: white;
                                 opacity: 1;
                             }
                             #python {
@@ -636,12 +637,15 @@ $darkgrey: darkgrey;
                                 transition: .7s all ease-in;
                                 opacity: 0;
                             }
+                            #python_description {
+                                opacity: 0;
+                            }
                             #python_description.show {
-                                transition: .3s all ease-out;
+                                transition: .7s all ease-out;
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 4vw;
                                 color: white;
-                                opacity: 0;
+                                opacity: 1;
                             }
                             #nodejs {
                                 width: 13vw;
@@ -727,11 +731,13 @@ $darkgrey: darkgrey;
                                 transition: .7s all ease-in;
                                 opacity: 1;
                             }
-                            p {
-                                color: white;
-                                font-family: 'Inter', sans-serif;
-                                font-size: .8em;
-                            }
+                            // .description {
+                            //     transition: .7s all ease-in;
+                            //     font-family: 'Roboto', sans-serif;
+                            //     font-size: 4vw;
+                            //     color: white;
+                            //     opacity: 0;
+                            // }
                         }
                     }
                     // Let's style the SKILL TITLES

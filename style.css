@@ -151,6 +151,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 4.5vw;
+  font-weight: bold;
   text-align: center;
 }
 * body .container .section_one .section_one_content .learn_more {
@@ -498,24 +499,24 @@
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript {
+  transition: 0.7s all ease-in;
   width: 14vw;
   height: 14vw;
   margin: 0.8vh 0 1vh 0;
   position: absolute;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript.dissapear {
-  transition: 0.7s all ease-in;
+  transition: 0.7s all ease-out;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript_description {
-  transition: 0.3s all ease-out;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  color: white;
   opacity: 0;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #javascript_description.show {
   transition: 0.7s all ease-in;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  color: white;
   opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #python {
@@ -528,12 +529,15 @@
   transition: 0.7s all ease-in;
   opacity: 0;
 }
+* body .container .section_four .section_four_bottom .skill_circle .skill_front #python_description {
+  opacity: 0;
+}
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #python_description.show {
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
   font-family: "Roboto", sans-serif;
   font-size: 4vw;
   color: white;
-  opacity: 0;
+  opacity: 1;
 }
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #nodejs {
   width: 13vw;
@@ -618,11 +622,6 @@
 * body .container .section_four .section_four_bottom .skill_circle .skill_front #heroku_description.show {
   transition: 0.7s all ease-in;
   opacity: 1;
-}
-* body .container .section_four .section_four_bottom .skill_circle .skill_front p {
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 0.8em;
 }
 * body .container .section_four .section_four_bottom .responsive_title {
   font-family: "Julius Sans One", sans-serif;

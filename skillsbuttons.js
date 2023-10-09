@@ -157,9 +157,38 @@ figma_skill.addEventListener('click', function () {
 
 
 // JAVASCRIPT
-let javascript_skill = document.getElementById('javascript');
-// Python
-let python_skill = document.getElementById('python');
+let javascript_skill = document.getElementById('javascript_skill');
+// JAVASCRIPT LOGO
+let javascript_logo = document.getElementById('javascript');
+// JAVASCRIPT DESCRIPTION
+let javascript_description = document.getElementById('javascript_description');
+// JAVASCRIPT EVENT LISTENER
+javascript_skill.addEventListener('click', function () {
+    console.log("JAVASCRIPT Button");
+    // Make logo dissapear
+    javascript_logo.classList.add('dissapear');
+    // Make text appear
+    javascript_description.classList.add('show');
+    // function to reset the js skill button
+    function javascript_back_on() {
+        javascript_logo.classList.remove('dissapear');
+        javascript_description.classList.remove('show');
+    }
+    // setTimer for call of function
+    setTimeout(javascript_back_on, 3000);
+});
+
+// PYTHON
+// PYTHON BUTTON
+let python_skill = document.getElementById('python_skill');
+// PYTHON LOGO
+let python_logo = document.getElementById('python');
+// PYTHON DESCRIPTION
+let python_description = document.getElementById('python_description');
+// PYTHON EVENT LISTENER
+python_skill.addEventListener('click', function () {
+    console.log("PYTHON Button");
+})
 // NodeJS
 let nodejs_skill = document.getElementById('nodejs');
 // Django
